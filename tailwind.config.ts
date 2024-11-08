@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import daisyui from "daisyui";
+import typography from "@tailwindcss/typography";
 
 const config: Config = {
   content: [
@@ -8,12 +10,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
       },
     },
   },
-  plugins: [],
+  plugins: [typography, daisyui],
+  daisyui: {
+    themes: ["light"],
+  },
 };
 export default config;
