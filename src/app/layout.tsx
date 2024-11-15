@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
 import "./globals.css";
 
@@ -23,7 +24,19 @@ export default function RootLayout({
     <html lang="en" className={montserrat.className} data-theme="light">
       <body>
         <div className="navbar bg-base-300">
-          <button className="btn btn-ghost text-xl">automart</button>
+          <Link href="/" className="btn btn-ghost text-xl">
+            automart
+          </Link>
+          <div className="flex-none">
+            <ul className="menu menu-horizontal px-1">
+              <li>
+                <Link href="/inventory">Inventory</Link>
+              </li>
+              <li>
+                <Link href="/locations">Locations</Link>
+              </li>
+            </ul>
+          </div>
         </div>
         {children}
       </body>

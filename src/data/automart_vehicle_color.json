@@ -1,1 +1,78 @@
-[{"id":1,"name":"Khaki"},{"id":2,"name":"Crimson"},{"id":3,"name":"Red"},{"id":4,"name":"Purple"},{"id":5,"name":"Orange"},{"id":6,"name":"Indigo"},{"id":7,"name":"Mauv"},{"id":8,"name":"Blue"},{"id":9,"name":"Green"},{"id":10,"name":"Teal"},{"id":11,"name":"Yellow"},{"id":12,"name":"Maroon"},{"id":13,"name":"Puce"},{"id":14,"name":"Aquamarine"},{"id":15,"name":"Goldenrod"},{"id":16,"name":"Turquoise"},{"id":17,"name":"Violet"},{"id":18,"name":"Pink"},{"id":19,"name":"Fuscia"}]
+[
+  {
+    "id": 1,
+    "name": "Khaki"
+  },
+  {
+    "id": 2,
+    "name": "Crimson"
+  },
+  {
+    "id": 3,
+    "name": "Red"
+  },
+  {
+    "id": 4,
+    "name": "Purple"
+  },
+  {
+    "id": 5,
+    "name": "Orange"
+  },
+  {
+    "id": 6,
+    "name": "Indigo"
+  },
+  {
+    "id": 7,
+    "name": "Mauv"
+  },
+  {
+    "id": 8,
+    "name": "Blue"
+  },
+  {
+    "id": 9,
+    "name": "Green"
+  },
+  {
+    "id": 10,
+    "name": "Teal"
+  },
+  {
+    "id": 11,
+    "name": "Yellow"
+  },
+  {
+    "id": 12,
+    "name": "Maroon"
+  },
+  {
+    "id": 13,
+    "name": "Puce"
+  },
+  {
+    "id": 14,
+    "name": "Aquamarine"
+  },
+  {
+    "id": 15,
+    "name": "Goldenrod"
+  },
+  {
+    "id": 16,
+    "name": "Turquoise"
+  },
+  {
+    "id": 17,
+    "name": "Violet"
+  },
+  {
+    "id": 18,
+    "name": "Pink"
+  },
+  {
+    "id": 19,
+    "name": "Fuscia"
+  }
+]

@@ -1,40 +1,23 @@
-"use client";
-
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { useCreateQueryString } from "../hooks/useCreateQueryString";
-
 interface SelectVehicleModelProps {
   vehicleModels: { id: number; name: string }[];
-  disabled?: boolean;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
 export default function SelectVehicleModel({
   vehicleModels,
-  disabled = true,
+  onChange,
+  value,
 }: SelectVehicleModelProps) {
-  const [make, setModel] = useState<string>("");
-  const router = useRouter();
-  const pathname = usePathname();
-  const { createQueryString } = useCreateQueryString();
-
-  function handleMakeChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const modelId = e.target.value;
-    const queryString = createQueryString("model", modelId);
-    router.push(`${pathname}?${queryString}`);
-    setModel(modelId);
-  }
-
   return (
     <select
       className="select"
-      value={make}
-      disabled={disabled}
-      onChange={handleMakeChange}
+      value={value}
+      disabled={vehicleModels.length === 0}
+      onChange={onChange}
     >
-      <option disabled value={""}>
-        Select a make
+      <option disabled value="">
+        Select a model
       </option>
       {vehicleModels.map((vehicleModel) => (
         <option key={vehicleModel.id} value={vehicleModel.name}>
